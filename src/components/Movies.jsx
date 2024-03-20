@@ -20,7 +20,7 @@ function Movies({handelAddtoWatchlist, handelRemovefromwatchlist,watchlist}) {
   };
 
   useEffect(() => {
-    axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_MOVIE_API_KEY}&language=en-US&page=${pageNo}`)
+    axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=642dbc20834261b773e09016c85c5200&language=en-US&page=${pageNo}`)
       .then(function(res) {
         setMovies(res.data.results);
       })
